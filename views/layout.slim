@@ -1,0 +1,25 @@
+html
+  head
+    title What Is The PLAN?
+    link rel="stylesheet" href="/stylesheet.css"
+  body
+    div.container
+      div.title
+        h1 PLAN XVIII
+      div.navigation
+        ul.plain
+          li
+            h2
+              a href="/" Home
+          li
+            h2
+              a href="sponsors" Sponsors
+          li
+            h2
+              a href="location" Location
+          li
+            h2 style="display: none;"
+              a href="pastPlans" Past PLANs
+      div.section
+        div.content
+          == yield
