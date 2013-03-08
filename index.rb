@@ -11,6 +11,10 @@ get '/stylesheet.css' do
   sass :stylesheet, :style => :expanded
 end
 
+get '/style' do
+  :stylesheet
+end
+
 get '/sponsors' do
   slim :sponsors
 end
