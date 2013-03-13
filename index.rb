@@ -26,3 +26,7 @@ end
 get '/pastPlans' do
   slim :pastPlans
 end
+
+get '/contact' do
+  slim :contact
+end
