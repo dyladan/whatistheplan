@@ -66,12 +66,14 @@ body
       float: left
       width: 75%
 
-      ul
-        li
-          list-style-type: none
+      li
+        list-style-type: square
 
-          &:before
-            content: "\003E\0020"
+      li.nodec
+        list-style-type: none
+
+        &:before
+          content: ""
 
 a
   text-decoration: none

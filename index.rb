@@ -30,3 +30,7 @@ end
 get '/contact' do
   slim :contact
 end
+
+get '/faq' do
+  slim :faq
+end
