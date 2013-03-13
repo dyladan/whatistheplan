@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'pony'
 require 'sass'
 require 'thin'
 require 'slim'
@@ -33,4 +34,17 @@ end
 
 get '/faq' do
   slim :faq
+end
+
+post '/contact' do
+  name = #{params[:name]}
+  mail = #{params[:mail]}
+  body = #{params[:body]}
+  Pony.mail(:to => 'cclub@yakko.cs.wmich.edu', :from => mail, :subject => "PLAN Contact Form from " + name, :body => body)
+
+  slim :contact
+end
+
+get '/contact' do
+  slim :contact
 end

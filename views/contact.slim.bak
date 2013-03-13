@@ -1,0 +1,17 @@
+form name="email" id="email" action="/contact" method="post" enctype="text/plain"
+  fieldset
+    ol
+      li
+        label for="name" Name:
+        br
+        input type="text" name="name" class="text"
+      li
+        label for="mail" Email:
+        br
+        input type="text" name="mail" class="text"
+      li
+        label for="body" Body:
+        br
+        textarea name="body"
+      li
+        input type="submit" value="Send" class="button"
