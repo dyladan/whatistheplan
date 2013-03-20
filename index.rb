@@ -1,8 +1,14 @@
 require 'sinatra'
+#require 'sinatra/cache'
 require 'pony'
 require 'sass'
 require 'thin'
 require 'slim'
+
+
+# set :root, '/home/fal11/dickweed/Dropbox/sites/whatistheplan'
+# set :public, '/home/fal11/dickweed/Dropbox/sites/whatistheplan'
+# set :cache_enabled, true
 
 get '/' do
   slim :index
